@@ -33,14 +33,14 @@
                 <div class="thumbs">
                     <div class="prev" @click="prev()"></div>
                     <div class="next" @click="next()"></div>
-                    <div class="thumb" >
+                    <div class="thumb" :class="slides.id == activeImage ? activeClass : '' ">
                         <img src="img/01.webp" alt="Svezia" />
                     </div>
                     <div class="thumb">
                         <img src="img/02.webp" alt="Ratchet & Clank" />
                     </div>
                     <div class="thumb">
-                        <img src="img/03.webp" alt="Fortnite" />
+                        <img src="img/03.webp" @click="selected()" alt="Fortnite" />
                     </div>
                     <div class="thumb">
                         <img src="img/04.webp" alt="Stray" />
