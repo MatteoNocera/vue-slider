@@ -72,8 +72,8 @@ const { createApp } = Vue
                 this.activeImage = this.slides.length - 1;
             }
         },
-        selected() {
-            console.log(`hai selezionato l'immagine `);
+        selected(index) {
+            console.log(`hai selezionato l'immagine ${index + 1}`);
             
         }
         
