@@ -80,11 +80,11 @@ const { createApp } = Vue
     },
 
     // Inserisco l'autoplay ogni 3 secondi
-    mounted() {
+    /* mounted() {
         setInterval(() => {
             this.next()
         }, 3000)
-    }
+    } */
     
   }).mount('#app')
 
