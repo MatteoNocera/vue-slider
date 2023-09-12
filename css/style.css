@@ -14,7 +14,7 @@
 .item {
     float: left;
     width: 800px;
-    height: 600px;
+    height: 500px;
     position: relative;
 }
 
@@ -22,6 +22,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right;
 }
 
 .item .text {
@@ -34,7 +35,7 @@
 
 .thumbs {
     float: left;
-    height: 600px;
+    height: 500px;
     background: #000;
     position: relative;
 }
@@ -49,6 +50,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: right;
 }
 
 .thumb.active {
