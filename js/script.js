@@ -14,6 +14,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+
         activeImage : 0,
         activeClass: 'active',
         slides: [
@@ -75,6 +76,14 @@ const { createApp } = Vue
             console.log(`hai selezionato l'immagine `);
             
         }
+        
+    },
+
+    // Inserisco l'autoplay ogni 3 secondi
+    mounted() {
+        setInterval(() => {
+            this.next()
+        }, 3000)
     }
     
   }).mount('#app')
