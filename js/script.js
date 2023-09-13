@@ -74,18 +74,25 @@ const { createApp } = Vue
         },
         selected(index) {
             console.log(`hai selezionato l'immagine ${index + 1}`);
-            
+            this.activeImage = index;
+        },
+        autoplay() {
+            this.autoplaySet = setInterval(() => {
+                this.next();
+            }, 3000);
+        },
+        stop() {
+            clearInterval(this.autoplaySet)
         }
     },
 
     // Inserisco l'autoplay ogni 3 secondi
     mounted() {
-        setInterval(() => {
-            this.next()
-        }, 3000);
+        this.autoplay()
+        }
 
 
-    }
+    
     
   }).mount('#app')
 
